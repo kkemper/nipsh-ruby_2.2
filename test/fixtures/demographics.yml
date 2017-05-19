@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_id: MyString
+  gender: 1
+  ethnicity: 1
+  race: 1
+  marital_status: 1
+  ed_level: MyString
+
+two:
+  report_id: MyString
+  gender: 1
+  ethnicity: 1
+  race: 1
+  marital_status: 1
+  ed_level: MyString

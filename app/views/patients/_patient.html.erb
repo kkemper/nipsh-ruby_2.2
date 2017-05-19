@@ -1,0 +1,14 @@
+<div class="search_results">
+<ul>
+  <li><h4><%= patient.fname %> <%= patient.lname %></h4></li>
+  <li>Patient ID: <%= patient.patient_id %></li>
+  <li>DOB: <%= patient.date_of_birth%></li>
+</ul>
+
+<h2>Ransack</h2>
+<%= display_query_sql(@patients) %>
+<%= tag.h2 display_results_header(@patients.size) %>
+<%= tag.table do %>
+  <%= tag.thead display_sort_column_headers(@s), escape_attributes: false %>
+  <%= tag.tbody display_search_results(@patients), escape_attributes: false %>
+<% end %>
